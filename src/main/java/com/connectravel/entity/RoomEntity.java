@@ -33,6 +33,6 @@ public class RoomEntity {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "ano",nullable = false)
-    private AccommodationEntity accommodationEntity; //어디 소속 숙소의 방인지 알아야되니까 중계어플에서는 필수.
+    private AccommodationEntity accommodation; //어디 소속 숙소의 방인지 알아야되니까 중계어플에서는 필수.
 
 }

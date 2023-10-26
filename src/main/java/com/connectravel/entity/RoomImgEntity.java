@@ -12,7 +12,7 @@ import javax.persistence.*;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@ToString(exclude = "room_id")
+@ToString(exclude = "room")
 public class RoomImgEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

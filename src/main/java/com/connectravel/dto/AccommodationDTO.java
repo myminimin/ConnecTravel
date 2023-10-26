@@ -43,6 +43,8 @@ public class AccommodationDTO {
 
     private List<ImgDTO> imgDTOList;// imgDTO list
 
+    private List<OptionDTO> options;
+
     /*@Column(scale = 4)
     private double grade; // 평점
     private int reviewcount; // 리뷰수*/

@@ -19,4 +19,6 @@ public class OptionEntity {
 
     private String optionName;  // 옵션 이름
 
+    private String category;
+
 }

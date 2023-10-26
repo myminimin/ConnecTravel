@@ -5,23 +5,24 @@ import lombok.*;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "accommodation_option")
+@Table(name = "room_option")
 @Getter
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@ToString(exclude = {"accommodation", "option"})
-public class AccommodationOptionEntity {
+@ToString(exclude = {"room", "option"})
+public class RoomOptionEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long aono;
+    private Long rono;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "ano", nullable = false)
-    private AccommodationEntity accommodation;
+    @JoinColumn(name = "rno", nullable = false)
+    private RoomEntity room;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "ono", nullable = false)
     private OptionEntity option;
+
 }
